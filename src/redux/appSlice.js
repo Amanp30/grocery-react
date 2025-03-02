@@ -60,6 +60,10 @@ const appSlice = createSlice({
       state.googleMapsLink = action.payload;
       saveState(state);
     },
+    clearListItems: (state) => {
+      state.list = [];
+      saveState(state);
+    },
     addListItem: (state, action) => {
       state.list = [action.payload, ...state.list];
       saveState(state);
@@ -83,6 +87,7 @@ export const {
   updatePhoneNumber,
   updateGoogleMapsLink,
   updateAddress,
+  clearListItems,
   addListItem,
   editListItem,
   removeListItem,

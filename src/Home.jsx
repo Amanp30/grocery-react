@@ -6,7 +6,12 @@ import { TextInputForList } from "./components/inputFields"; // ✅ Import input
 import TopMenu from "./components/TopMenu";
 import Title from "./components/Title";
 import { useDispatch, useSelector } from "react-redux";
-import { addListItem, editListItem, removeListItem } from "./redux/appSlice";
+import {
+  addListItem,
+  clearListItems,
+  editListItem,
+  removeListItem,
+} from "./redux/appSlice";
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {
@@ -101,7 +106,16 @@ function HomePage() {
         <TopMenu />
         <div className="px-[20px]">
           <div className="flex items-center justify-between">
-            <Title text={"Grocery List"} />
+            <div className="flex gap-3 items-center ">
+              <Title text="Grocery List" />
+              <button
+                className="px-3 py-1.5 bg-amber-500 text-white rounded-lg shadow-sm transition-all hover:bg-amber-600"
+                onClick={(e) => dispatch(clearListItems())}
+              >
+                Clear List
+              </button>
+            </div>
+
             <p> {data.list.length + " items"}</p>
           </div>
         </div>
