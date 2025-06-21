@@ -1,12 +1,27 @@
-# React + Vite
+# 🛒 Kirana List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Kirana List** is a smart and efficient app built with **Vite**, **React**, and **Redux** that lets you create your grocery (kirana) list using **voice commands** — and download it instantly as a clean, printable **PDF**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎙️ **Voice Input**: Speak your kirana items — the app listens and adds them to your list.
+- 📝 **Live List Management**: View, edit, and manage your list in real time.
+- 📄 **One-Click PDF Export**: Download your list as a well-formatted PDF using `jspdf` and `jspdf-autotable`.
+- ⚡ **High Performance**: Powered by Vite for fast builds and hot reloads.
 
-## Expanding the ESLint configuration
+## 📦 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Vite** – Lightning-fast dev server and build tool
+- **React** – Modern, component-based UI library
+- **Redux** – Predictable state management
+- **Speech Recognition API** – Converts spoken input into text
+- **jspdf** – PDF generation in the browser
+- **jspdf-autotable** – Table-based formatting for PDF export
+
+## 💡 Use Case
+
+Tired of forgetting items at the store? Just **speak** your shopping list and **download it as a PDF** — no typing needed, no paper wasted. Ideal for families, shopkeepers, or anyone who shops regularly.
+
+---
+
+Made with ❤️ to simplify your grocery runs.
